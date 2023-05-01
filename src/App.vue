@@ -1,54 +1,169 @@
 <template>
   <div class="">
-    <h1 id="logo" class="text-minor-xlg mt-12 mb-16 text-primary font-bold">
+    <h1 id="logo" class="mx-4 text-minor-xlg mt-12 mb-16 text-primary font-bold">
       Enid
     </h1>
 
-    <div class="form">
+    <div class="form mx-4">
       <form>
-        <div class="username">
-          <input type="text" name="username" id="username" placeholder="Username"
-          class="mt-8
-           
-          appearance-none 
-          border 
+        <!-- <div class="relative mb-3" data-te-input-wrapper-init>
+          <input
+            type="text"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleFormControlInput1"
+            placeholder="Example label" />
+          <label
+            for="exampleFormControlInput1"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >Example label
+          </label>
+        </div> -->
+        <div class="username relative">
+          <input type="text" name="username" id="username"
+          class="
+          peer
+          block
+          border-0
+          px-3
+          py-[0.32rem]
+          leading-[1.6]
+          outline-none 
+          transition-all 
+          duration-200 
+          ease-linear 
+          focus:placeholder:opacity-100 
+          peer-focus:text-primary 
+          data-[te-input-state-active]:placeholder:opacity-100 
+          motion-reduce:transition-none
           rounded-[10px] 
-          w-full 
-          text-school-name 
+          w-full
+          border-white
           text-base 
           pt-2 
           pb-2 
           pl-4">
+
+          <label
+            for="exampleFormControlInput1"
+            class="
+            pointer-events-none 
+            absolute 
+            left-3 
+            top-0 
+            mb-0 
+            max-w-[90%] 
+            origin-[0_0] 
+            truncate 
+            pt-[0.37rem] 
+            leading-[1.6] 
+            transition-all 
+            duration-200 
+            ease-out 
+            peer-focus:-translate-y-[1.5rem] 
+            peer-focus:scale-[0.8] 
+            peer-focus:text-primary 
+            peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >Username
+          </label>
         </div>
 
-        <div class="password mt-8">
-          <input type="text" name="password" id="password" placeholder="Password"
+        <div class="password mt-8 relative">
+          <input type="text" name="pawword" id="password"
           class="
-           
-          appearance-none 
-          border 
+          peer
+          block
+          border-0
+          px-3
+          py-[0.32rem]
+          leading-[1.6]
+          outline-none 
+          transition-all 
+          duration-200 
+          ease-linear 
+          focus:placeholder:opacity-100 
+          peer-focus:text-primary 
+          data-[te-input-state-active]:placeholder:opacity-100 
+          motion-reduce:transition-none
           rounded-[10px] 
-          w-full 
-          text-school-name 
+          w-full
+          border-white
           text-base 
           pt-2 
           pb-2 
           pl-4">
+
+          <label
+            for="exampleFormControlInput1"
+            class="
+            pointer-events-none 
+            absolute 
+            left-3 
+            top-0 
+            mb-0 
+            max-w-[90%] 
+            origin-[0_0] 
+            truncate 
+            pt-[0.37rem] 
+            leading-[1.6] 
+            transition-all 
+            duration-200 
+            ease-out 
+            peer-focus:-translate-y-[1.5rem] 
+            peer-focus:scale-[0.8] 
+            peer-focus:text-primary 
+            peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >
+            Password
+          </label>
         </div>
 
         <div class="campus relative mt-8">
-          <input type="text" name="campus" id="campus" placeholder="Find your Campus"
+          <input type="text" name="campus" id="campus"
           class="
-           
-          appearance-none 
-          border 
+          peer
+          block
+          border-0
+          px-3
+          py-[0.32rem]
+          leading-[1.6]
+          outline-none 
+          transition-all 
+          duration-200 
+          ease-linear 
+          focus:placeholder:opacity-100 
+          peer-focus:text-primary 
+          data-[te-input-state-active]:placeholder:opacity-100 
+          motion-reduce:transition-none
           rounded-[10px] 
-          w-full 
-          text-school-name 
+          w-full
+          border-white
           text-base 
           pt-2 
           pb-2 
           pl-4">
+
+          <label
+            for="exampleFormControlInput1"
+            class="
+            pointer-events-none 
+            absolute 
+            left-3 
+            top-0 
+            mb-0 
+            max-w-[90%] 
+            origin-[0_0] 
+            truncate 
+            pt-[0.37rem] 
+            leading-[1.6] 
+            transition-all 
+            duration-200 
+            ease-out 
+            peer-focus:-translate-y-[1.5rem] 
+            peer-focus:scale-[0.8] 
+            peer-focus:text-primary 
+            peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            >Username
+          </label>
           <span class="absolute flex items-center inset-y-0 right-4">
             <svg fill="#5D5D72" opacity="0.6" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
           </span>
@@ -100,14 +215,14 @@
 
     <div class="
     mt-12 
-    ml-4
+    pl-4
     flex
     flex-nowrap
     overflow-x-scroll
     scrolling-touch
     pt-[1.25rem]
-    overflow-hidden
-    ">
+    "
+    id="school-container">
       <div class="
       min-h-[176px]
       relative
@@ -234,17 +349,63 @@
       </div>
     </div>
 
-    <div class="min-h-[500px]">
+    <div class="
+    login-btn
+    mx-4
+    mt-[4.3125rem]">
+    <button class="
+    text-white 
+    font-bold 
+    text-base 
+    rounded-[10px] 
+    bg-gradient-to-r
+    from-blue-500
+    via-blue-600
+    to-blue-700
+    w-full 
+    py-1
+    hover:bg-gradient-br
+    focus:ring-4
+
+    focus:outline-none
+    focus:ring-blue/50
+    text-center" type="button">
+      Login
+    </button>
     </div>
+
   </div>
 </template>
 
 <script setup>
 import facebookUrl from "./assets/images/facebook-cion.svg";
 import checkUrl from './assets/images/check-icon.svg';
+import { onMounted } from "vue";
+import {initTE, Input} from "tw-elements";
+
+onMounted(() => {
+  initTE({Input});
+})
 </script>
 
 <style>
+
+
+#school-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+#school-container::-webkit-scrollbar {
+  display: none;
+}
 #card::before {
   position: absolute;
   top: -20px;
@@ -252,7 +413,7 @@ import checkUrl from './assets/images/check-icon.svg';
   width: 40px;
   height: 40px;
   content:  " ";
-  background-image: url(logo.png);
+  background-image: url(./assets/images/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
