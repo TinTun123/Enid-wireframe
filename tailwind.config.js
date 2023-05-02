@@ -25,7 +25,9 @@ module.exports = {
       'minor-lg' : '1.44rem',
       'major-lg' : '1.563rem',
       'minor-xlg' : '1.728rem',
-      'major-xlg' : '1.953rem'
+      'major-xlg' : '1.953rem',
+      'minor-xxlg' : '2.074rem',
+      'major-xxlg' : '2.441rem'
     },
     extend: {
       colors : {

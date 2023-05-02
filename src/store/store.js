@@ -6,7 +6,7 @@ const store = createStore({
             {
                 id : 1,
                 name : 'Cherry language school',
-                description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores reiciendis suscipit labore voluptas nemo mollitia et quae, facilis itaque ea voluptatem autem aliquid. Officia ratione repellat quo optio reprehenderit!",
+                description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit odit officiis beatae consectetur, nihil porro, a repellat quaerat animi vero, nam vitae doloremque? Similique sequi quam ducimus obcaecati cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores reiciendis suscipit labore voluptas nemo mollitia et quae, facilis itaque ea voluptatem autem aliquid. Officia ratione repellat quo optio reprehenderit!",
                 choose : false
             },
             {
