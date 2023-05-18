@@ -13,16 +13,17 @@ module.exports = {
       'desktop' : '1240px'
     },
     fontSize : {
+      'minor-xxxsm' : '0.402rem', //6.43 px
       'major-xxsm' : '0.512rem',
-      'minor-xxsm' : '0.579rem',
+      'minor-xxsm' : '0.579rem', //9.26 px
       'major-xsm': '0.64rem',
-      'minor-xsm' : '0.694rem',
-      'major-sm' : '0.8rem',
-      'minor-sm' : '0.833rem',
+      'minor-xsm' : '0.694rem', // 11.11 px
+      'major-sm' : '0.8rem', // 12.80 px
+      'minor-sm' : '0.833rem', //13.33 px
       'base' : '1rem',
-      'minor-l' : '1.2rem',
-      'major-l' : '1.25rem',
-      'minor-lg' : '1.44rem',
+      'minor-l' : '1.2rem', //19.20 px
+      'major-l' : '1.25rem', //20 px
+      'minor-lg' : '1.44rem', //23.04 px
       'major-lg' : '1.563rem',
       'minor-xlg' : '1.728rem',
       'major-xlg' : '1.953rem',
@@ -32,9 +33,13 @@ module.exports = {
     extend: {
       colors : {
         'background' : '#CFCFCF',
-        'primary' : '#1153BD',
+        'primary' : '#4585E5',
         'school-name' : '#5D5D72',
-
+        
+      },
+      dropShadow : {
+        'drop-sha' : '2px 2px 10px rgba(0, 0, 0, 0.1)',
+        'drop-sha-hor' : '2px 2px 10px rgba(0, 0, 0, 0.2)'
       }
     },
   },
