@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white w-full lg-tablet:w-auto lg-tablet:h-auto lg-tablet:bottom-1/2 lg-tablet:translate-y-1/2 lg-tablet:left-0 lg-tablet:py-6 lg-tablet:px-4 lg-tablet:rounded-[35.75px]">
+    <div class="bg-[#F0F2F5] w-full lg-tablet:w-auto lg-tablet:h-auto lg-tablet:bottom-1/2 lg-tablet:translate-y-1/2 lg-tablet:left-0 lg-tablet:py-6 lg-tablet:px-4 lg-tablet:rounded-[35.75px]">
         <div class="grid grid-cols-5 pt-1 mx-auto lg-tablet:flex lg-tablet:flex-col lg-tablet:items-center lg-tablet:justify-center lg-tablet:gap-y-8">
             
             <button @click="router.push({name : 'Myclasses'})" type="button" class="inline-flex flex-col gap-y-1 items-center justify-center group">

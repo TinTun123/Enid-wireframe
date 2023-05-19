@@ -27,7 +27,7 @@
             lg-tablet:w-[557px]
             lg-tablet:h-[418px]">
                 <div class="flex items-center h-4 absolute bottom-2 gap-x-1 tablet:bottom-4">
-                    <div class="w-4 h-4">
+                    <div class="w-2 h-2 tablet:w-4 tablet:h-4">
                         <svg class="w-full h-full" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_217_372)">
                                 <path fill="#4585E5" d="M0 2.73852H1.66667V5.46579H0V2.73852ZM3.33333 0.46579H5V5.46579H3.33333V0.46579Z" fill-opacity="0.7"/>
@@ -42,13 +42,13 @@
                     <span 
                     class="text-minor-xxxsm 
                     text-black/80
-                    tablet:text-minor-sm
+                    tablet:text-minor-xsm
                     lg-tablet:text-base">{{ course.level }}</span>
                 </div>
 
-                <div class="flex items-center gap-x-2 absolute bottom-2 right-2 tablet:right-4 tablet:bottom-4">
+                <div class="flex items-center gap-x-2 absolute bottom-2 right-4 tablet:right-4 tablet:bottom-4">
                     <div class="flex items-center gap-x-1">
-                        <div class="w-4 h-4">
+                        <div class="w-2 h-2 tablet:w-4 tablet:h-4">
 
                             <svg class="w-full h-full" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_28_174)">
@@ -66,11 +66,11 @@
                         class="flex 
                         flex-col 
                         ">
-                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-sm lg-tablet:text-major-sm">{{ course.time }}</span>
+                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">{{ course.time }}</span>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-x-1">
-                        <div class="h-4 w-4">
+                        <div class="h-2 w-2 tablet:w-4 tablet:h-4">
                             <svg class="w-full h-full" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_28_168)">
                                 <path fill-opacity="1" fill="#4585E5" d="M4.36059 5.98113V5H5.45073V5.98113H4.36059ZM2.18029 5.98113V5H3.27044V5.98113H2.18029ZM6.54088 5.98113V5H7.63103V5.98113H6.54088ZM4.36059 7.94339V6.96226H5.45073V7.94339H4.36059ZM2.18029 7.94339V6.96226H3.27044V7.94339H2.18029ZM6.54088 7.94339V6.96226H7.63103V7.94339H6.54088ZM0 9.90566V1.07547H1.63522V0.0943375H2.72537V1.07547H7.08595V0.0943375H8.1761V1.07547H9.81132V9.90566H0ZM1.09015 8.92453H8.72117V4.01887H1.09015V8.92453ZM1.09015 3.03773H8.72117V2.0566H1.09015V3.03773Z"/>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="flex flex-col space-y-[-4px]">
-                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-sm lg-tablet:text-major-sm">
+                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">
                                 {{ course.days }}
                             </span>
 
@@ -112,7 +112,7 @@ import { useCourseDetailsStore } from '../../store/courseDetailsStore';
 const courseStore = useCourseDetailsStore();
 const id_arr = ['0001', '0002', '0003', '0004'];
 const inner = toRef(ref, 'inner');
-const {currentCorID} = useTouchSwipe(inner, courseStore.totalcourse, id_arr);
+const {currentCorID} = useTouchSwipe(inner, courseStore.totalcourse, id_arr, 'courses');
 
 
 watch(currentCorID, (newval) => {

@@ -23,7 +23,7 @@
             Course
         </h3>
         <videosSliderComponent v-if="type !== 'desktop'" class="mt-8 tablet:mt-12" />
-        <CourseDetailComponent class="mt-4 lg-tablet:mt-12" />        
+        <CourseDetailComponent class="mt-4 lg-tablet:mt-12 desktop:max-w-[840px]" />        
     </div>
 </template>
 

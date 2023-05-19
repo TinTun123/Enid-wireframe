@@ -245,5 +245,21 @@ export const useCourseDetailsStore = defineStore('CourseDetails', () => {
         return currentCou;
     })
 
-    return {course, currentCourseID, totalcourse, currentSyllabus};
+    const currentCourse = computed(() => {
+        return currentCourseID;
+    })
+
+    const courseTitles = computed(() => {
+        return course.value.map((c) => {
+            return c.title;
+        })
+    })
+
+    const courseIds = computed(() => {
+        return course.value.map((c) => {
+            return c.id
+        });
+    })
+
+    return {course, currentCourseID, totalcourse, currentSyllabus, currentCourse, courseTitles, courseIds};
 })

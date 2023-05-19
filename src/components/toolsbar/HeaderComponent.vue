@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-between bg-white h-12 px-4 py-2 tablet:h-16 tablet:px-8 tablet:font-medium lg-tablet:py-4 desktop:w-[248px] desktop:px-4 desktop:border-b desktop:border-b-black/20">
+    <div class="flex bg-[#F0F2F5] items-center justify-between h-12 px-4 py-2 tablet:h-16 tablet:px-8 tablet:font-medium lg-tablet:py-4 desktop:w-[248px] desktop:px-4 desktop:border-b desktop:border-b-black/20">
         <h3 class="text-minor-sm font-medium tablet:text-base lg-tablet:text-major-l desktop:text-major-sm">Cherry Language School</h3>
         
         

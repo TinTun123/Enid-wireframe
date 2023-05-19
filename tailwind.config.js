@@ -13,7 +13,11 @@ module.exports = {
       'desktop' : '1240px'
     },
     fontSize : {
-      'minor-xxxsm' : '0.402rem', //6.43 px
+      'minor-7xsm' : '0.233rem', // 3.72px
+      'minor-6xsm' : '0.279rem', // 4.47px
+      'minor-5xsm' : '0.335rem', // 5.36px
+      'minor-4xsm' : '0.402rem', //6.43px
+      'minor-xxxsm' : '0.482rem', //7.72 px
       'major-xxsm' : '0.512rem',
       'minor-xxsm' : '0.579rem', //9.26 px
       'major-xsm': '0.64rem',

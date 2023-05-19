@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-white">
+    <div class="max-h-screen bg-white overflow-y-hidden">
         <div class="w-[248px] h-full flex flex-col">  
                 <div class="flex items-center justify-center mb-4 mx-4 bg-white py-4 desktop:border-b desktop:border-b-black/20">
                     <div class="flex items-center justify-center gap-x-4 desktop:gap-x-2 desktop:items-end">

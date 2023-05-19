@@ -2,7 +2,7 @@ import {   onMounted, onUnmounted, ref } from "vue";
 import { useBreakPoints } from './useBreakPoints';
 
 
-export const useTouchSwipe = (target, total, Ids) => {
+export const useTouchSwipe = (target, total, Ids, page) => {
     const initialX = ref(0);
     const initialY = ref(0);
     const mouseX = ref(0);
@@ -14,7 +14,8 @@ export const useTouchSwipe = (target, total, Ids) => {
     const currentCorID = ref(Ids[currentCourse.value]);
     const {type , width } = useBreakPoints();
     const counter = ref(0);
-
+    const childWidth = ref();
+    let marginArr = [];
 
 
     let rectLeft;
@@ -71,7 +72,13 @@ export const useTouchSwipe = (target, total, Ids) => {
     }
     
     onMounted(() => {
+        childWidth.value = inner.value.children[0].clientWidth;
         inner.value.scrollLeft = 0;
+        if(page === 'courses') {
+            marginArr = [16, 32];
+        } else if (page === 'classes') {
+            marginArr = [0, 0];
+        }
         rectLeft = inner.value.getBoundingClientRect().left;
         rectTop = inner.value.getBoundingClientRect().top;
         counter.value = 0;
@@ -103,28 +110,48 @@ export const useTouchSwipe = (target, total, Ids) => {
     const next = () => {
 
         if(type.value === 'phone') {
-            inner.value.scrollLeft += 253 + 16;
+            if (counter.value === 0) {
+                inner.value.scrollLeft += childWidth.value + marginArr[0];
+                counter.value += 1;
+            } else {
+                inner.value.scrollLeft += childWidth.value + marginArr[0] + (page === 'classes' ? 16 : 0);
+                counter.value += 1;
+            }
         } else if (type.value === 'tablet') {
-            inner.value.scrollLeft += 441 + 32;
+            if (counter.value === 0) {
+                console.log('tablet');
+                inner.value.scrollLeft += childWidth.value + marginArr[1];
+                counter.value += 1;
+            } else {
+                inner.value.scrollLeft += childWidth.value + marginArr[1] + 32;
+                counter.value += 1;
+            }
         } else if (type.value === 'lg-tablet') {
-            
-            inner.value.scrollLeft += 557 + 32;
+            if (counter.value) {
+                inner.value.scrollLeft += childWidth.value + marginArr[1];
+                counter.value += 1;
+            } else {
+                inner.value.scrollLeft += childWidth.value + marginArr[1] + (page === 'classes' ? 16 : 0);
+                counter.value += 1;
+            }
+
         }
 
     }
 
     const previous = () => {
         if(type.value === 'phone') {
-            inner.value.scrollLeft -= 253 + 16;
+            inner.value.scrollLeft -= childWidth.value + marginArr[0] + (page === 'classes' ? 16 : 0);
+            counter.value -= 1;
         } else if (type.value === 'tablet') {
-            inner.value.scrollLeft -= 441 + 32;
+            inner.value.scrollLeft -= childWidth.value + marginArr[1] + 32;
+            counter.value -= 1;
         } else if (type.value === 'lg-tablet') {
-
-            inner.value.scrollLeft -= 557 + 32;
-        
+            inner.value.scrollLeft -= childWidth.value + marginArr[1] + (page === 'classes' ? 16 : 0);
+            counter.value -= 1;
         }
     }
 
 
-    return {currentCorID};
+    return {currentCorID, counter};
 }
