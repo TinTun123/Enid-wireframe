@@ -40,7 +40,7 @@
                         </svg>
                     </div>
                     <span 
-                    class="text-minor-xxxsm 
+                    class="text-minor-xxsm 
                     text-black/80
                     tablet:text-minor-xsm
                     lg-tablet:text-base">{{ course.level }}</span>
@@ -66,7 +66,7 @@
                         class="flex 
                         flex-col 
                         ">
-                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">{{ course.time }}</span>
+                            <span class="text-minor-xxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">{{ course.time }}</span>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-x-1">
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="flex flex-col space-y-[-4px]">
-                            <span class="text-minor-xxxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">
+                            <span class="text-minor-xxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">
                                 {{ course.days }}
                             </span>
 

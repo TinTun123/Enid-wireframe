@@ -125,7 +125,7 @@
                                     </div>
 
                                     <h4 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     text-black/80
                                     tablet:text-minor-xsm 
                                     lg-tablet:text-major-sm
@@ -137,7 +137,7 @@
 
                                 <ol class="list-decimal ml-4 mb-3">
                                     <li v-for="(lecture, i) in weeks.lectures" :key="i" 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     font-medium 
                                     text-black/90 
                                     tablet:text-minor-xsm 
@@ -173,7 +173,7 @@
                                     </div>
 
                                     <h4 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
                                     lg-tablet:text-major-sm
@@ -183,7 +183,7 @@
                                 </div>
 
                                 <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(exercise, i) in weeks.exercise" :key="i" class="text-minor-xxsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{exercise}}</li>
+                                    <li v-for="(exercise, i) in weeks.exercise" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{exercise}}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -250,7 +250,7 @@
                                     </div>
 
                                     <h4 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
                                     lg-tablet:text-major-sm
@@ -260,7 +260,7 @@
                                 </div>
 
                                 <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(assign, i) in weeks.assginments" :key="i" class="text-minor-xxsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ assign }}</li>
+                                    <li v-for="(assign, i) in weeks.assginments" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ assign }}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -283,7 +283,7 @@
                                     </div>
 
                                     <h4 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
                                     lg-tablet:text-major-sm
@@ -293,7 +293,7 @@
                                 </div>
 
                                 <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(reading, i) in weeks.readings" :key="i" class="text-minor-xxsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ reading }}</li>
+                                    <li v-for="(reading, i) in weeks.readings" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ reading }}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -320,7 +320,7 @@
                                     </div>
 
                                     <h4 
-                                    class="text-minor-xxsm 
+                                    class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
                                     lg-tablet:text-major-sm
@@ -330,7 +330,7 @@
                                 </div>
 
                                 <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(discussion, i) in weeks.discussion" :key="i" class="text-minor-xxsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ discussion }}</li>
+                                    <li v-for="(discussion, i) in weeks.discussion" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ discussion }}</li>
                                 </ol>
                             </div>
                         </transition>

@@ -19,7 +19,7 @@ module.exports = {
       'minor-4xsm' : '0.402rem', //6.43px
       'minor-xxxsm' : '0.482rem', //7.72 px
       'major-xxsm' : '0.512rem',
-      'minor-xxsm' : '0.579rem', //9.26 px
+      'minor-xxsm' : '0.579rem', //9.64 px
       'major-xsm': '0.64rem',
       'minor-xsm' : '0.694rem', // 11.11 px
       'major-sm' : '0.8rem', // 12.80 px
