@@ -2,7 +2,7 @@
     <div class="bg-[#F0F2F5] w-full lg-tablet:w-auto lg-tablet:h-auto lg-tablet:bottom-1/2 lg-tablet:translate-y-1/2 lg-tablet:left-0 lg-tablet:py-6 lg-tablet:px-4 lg-tablet:rounded-[35.75px]">
         <div class="grid grid-cols-5 pt-1 mx-auto lg-tablet:flex lg-tablet:flex-col lg-tablet:items-center lg-tablet:justify-center lg-tablet:gap-y-8">
             
-            <button @click="router.push({name : 'Myclasses'})" type="button" class="inline-flex flex-col gap-y-1 items-center justify-center group">
+            <button v-ripple="'rgba(69, 133, 229, 0.12)'" @click="router.push({name : 'Myclasses'})" type="button" class="inline-flex overflow-hidden flex-col gap-y-1 items-center justify-center group">
 
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path :class="[currentTag === 'Myclasses' ? 'fill-primary' : 'fill-black/40']" d="M0.774194 0.5H23.2258C23.2465 0.5 23.3037 0.510035 23.3729 0.60258C23.4423 0.69524 23.5 0.846291 23.5 1.03448V22.9655C23.5 23.1537 23.4423 23.3048 23.3729 23.3974C23.3037 23.49 23.2465 23.5 23.2258 23.5H0.774194C0.753534 23.5 0.696325 23.49 0.627066 23.3974C0.55772 23.3048 0.5 23.1537 0.5 22.9655V1.03448C0.5 0.846291 0.55772 0.69524 0.627066 0.60258C0.696325 0.510035 0.753534 0.5 0.774194 0.5Z" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -12,7 +12,7 @@
                 <span :class="[currentTag === 'Myclasses' ? 'text-primary/60' : 'text-black/60']" class="text-minor-xxsm font-medium lg-tablet:text-major-xsm desktop:text-major-sm">Myclass</span>
             </button>
 
-            <button @click="router.push({name : 'Courses'})" type="button" class="hidden lg-tablet:inline-flex flex-col gap-y-1 items-center justify-center group">
+            <button v-ripple="'rgba(69, 133, 229, 0.12)'" @click="router.push({name : 'Courses'})" type="button" class="hidden lg-tablet:inline-flex overflow-hidden flex-col gap-y-1 items-center justify-center group">
 
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path :class="[currentTag === 'Courses' ? 'fill-primary' : 'fill-black/40']" d="M24 2.25V15.75C24 16.9922 22.9922 18 21.75 18H19.5V8.25C19.5 6.18281 17.8172 4.5 15.75 4.5H6V2.25C6 1.00781 7.00781 0 8.25 0H21.75C22.9922 0 24 1.00781 24 2.25ZM18 8.25V21.75C18 22.9922 16.9922 24 15.75 24H2.25C1.00781 24 0 22.9922 0 21.75V8.25C0 7.00781 1.00781 6 2.25 6H15.75C16.9922 6 18 7.00781 18 8.25ZM14.8125 9.5625C14.8125 9.25313 14.5594 9 14.25 9H3.5625C3.25313 9 3 9.25313 3 9.5625V12H14.8125V9.5625Z"/>
@@ -20,7 +20,7 @@
                 <span :class="[currentTag === 'Courses' ? 'text-primary/60' : 'text-black/40']" class="text-minor-xxsm font-medium lg-tablet:text-major-xsm">Courses</span>
             </button>
 
-            <button @click="router.push({name : 'Library'})" type="button" class="inline-flex flex-col gap-y-1 items-center justify-center">
+            <button v-ripple="'rgba(69, 133, 229, 0.12)'" @click="router.push({name : 'Library'})" type="button" class="inline-flex overflow-hidden flex-col gap-y-1 items-center justify-center">
         
                 <svg class="w-6 h-6" :class="[currentTag === 'Library' ? 'fill-primary' : 'fill-black/40']" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="stroke-white" d="M3.81267 9.40779C3.52172 12.0683 3.34836 14.7453 3.2933 17.4277C6.33846 18.9472 9.25413 20.8132 12 23C14.7462 20.8131 17.6622 18.9471 20.7078 17.4277C20.6527 14.7453 20.4793 12.0683 20.1884 9.40779M20.1884 9.40779C21.114 9.0363 22.0522 8.69261 23 8.37924C19.548 5.48851 15.863 3.01651 12 1C8.13693 3.01693 4.452 5.48935 1 8.38051C1.94491 8.6921 2.88247 9.03465 3.81162 9.40779C6.6345 10.5414 9.37343 11.9539 12 13.6306C14.6262 11.954 17.3659 10.5415 20.1884 9.40779ZM6.44658 15.5399C6.65699 15.5399 6.85878 15.44 7.00756 15.2623C7.15634 15.0846 7.23993 14.8436 7.23993 14.5922C7.23993 14.3409 7.15634 14.0998 7.00756 13.9221C6.85878 13.7444 6.65699 13.6445 6.44658 13.6445C6.23617 13.6445 6.03438 13.7444 5.8856 13.9221C5.73682 14.0998 5.65324 14.3409 5.65324 14.5922C5.65324 14.8436 5.73682 15.0846 5.8856 15.2623C6.03438 15.44 6.23617 15.5399 6.44658 15.5399ZM6.44658 15.5399V10.8963C8.24138 9.56363 10.0952 8.34799 12 7.25467M4.58804 21.8489C5.17826 21.1456 5.64629 20.3099 5.96525 19.3898C6.2842 18.4697 6.44778 17.4834 6.44658 16.4876V14.5922" stroke-linecap="round" stroke-linejoin="round"/>
@@ -32,7 +32,7 @@
                 <img src="../../assets/images/logo.png" class="w-full h-full" alt="">
             </div>
 
-            <button @click="router.push({name : 'Progress'})" type="button" class="inline-flex flex-col gap-y-1 items-center justify-center">
+            <button v-ripple="'rgba(69, 133, 229, 0.12)'" @click="router.push({name : 'Progress'})" type="button" class="inline-flex overflow-hidden flex-col gap-y-1 items-center justify-center">
                 
                 <!-- <svg :class="[currentTag === 'Progress' ? 'fill-primary' : 'fill-white']" class="w-7 h-7 lg-tablet:w-7 lg-tablet:h-7" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 5H21.5V4.5V3V2.5H21H15H14.5V3V4.5V5H15H21ZM21.5 13.5V13H21H9H8.5V13.5V15V15.5H9H21H21.5V15V13.5ZM0.5 2.25C0.5 1.28395 1.28395 0.5 2.25 0.5H21.75C22.716 0.5 23.5 1.28395 23.5 2.25V5.25C23.5 6.21604 22.716 7 21.75 7H2.25C1.28395 7 0.5 6.21604 0.5 5.25V2.25ZM0.5 12.75C0.5 11.784 1.28395 11 2.25 11H21.75C22.716 11 23.5 11.784 23.5 12.75V15.75C23.5 16.716 22.716 17.5 21.75 17.5H2.25C1.28395 17.5 0.5 16.716 0.5 15.75V12.75Z" stroke="black" stroke-opacity="0.6"/>
@@ -45,7 +45,7 @@
                 <span :class="[currentTag === 'Progress' ? 'text-primary/60' : 'text-black/40']" class="text-minor-xxsm text-black/40 font-medium lg-tablet:text-major-xsm">Progress</span>
             </button>
 
-            <button @click="router.push({name : 'Profile'})" type="button" class="inline-flex flex-col gap-y-1 items-center justify-center">
+            <button v-ripple="'rgba(69, 133, 229, 0.12)'" @click="router.push({name : 'Profile'})" type="button" class="inline-flex overflow-hidden flex-col gap-y-1 items-center justify-center">
                 <svg :class="[currentTag === 'Profile' ? 'fill-primary' : 'fill-black/40']" class="w-6 h-6 lg-tablet:w-6 lg-tablet:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4C10.3209 2.39969 8.67111 2.83978 7.21526 3.67635C5.75942 4.51292 4.54845 5.7167 3.70323 7.16754C2.85801 8.61838 2.4081 10.2655 2.39841 11.9446C2.38872 13.6237 2.81959 15.2759 3.64801 16.7364C4.20794 16.0087 4.92772 15.4195 5.75171 15.0144C6.5757 14.6092 7.48181 14.399 8.4 14.4H15.6C16.5182 14.399 17.4243 14.6092 18.2483 15.0144C19.0723 15.4195 19.7921 16.0087 20.352 16.7364C21.1804 15.2759 21.6113 13.6237 21.6016 11.9446C21.5919 10.2655 21.142 8.61838 20.2968 7.16754C19.4516 5.7167 18.2406 4.51292 16.7847 3.67635C15.3289 2.83978 13.6791 2.39969 12 2.4ZM21.5316 19.2912C23.136 17.1995 24.0039 14.6361 24 12C24 5.3724 18.6276 0 12 0C5.37241 0 1.35039e-05 5.3724 1.35039e-05 12C-0.00394822 14.6361 0.863899 17.1996 2.46841 19.2912L2.46241 19.3128L2.88841 19.8084C4.01387 21.1242 5.41127 22.1803 6.98428 22.9039C8.5573 23.6276 10.2685 24.0015 12 24C14.4328 24.0045 16.8089 23.2655 18.81 21.882C19.6631 21.2926 20.4367 20.5956 21.1116 19.8084L21.5376 19.3128L21.5316 19.2912ZM12 4.8C11.0452 4.8 10.1295 5.17928 9.45442 5.85441C8.77929 6.52954 8.4 7.44521 8.4 8.39999C8.4 9.35477 8.77929 10.2704 9.45442 10.9456C10.1295 11.6207 11.0452 12 12 12C12.9548 12 13.8705 11.6207 14.5456 10.9456C15.2207 10.2704 15.6 9.35477 15.6 8.39999C15.6 7.44521 15.2207 6.52954 14.5456 5.85441C13.8705 5.17928 12.9548 4.8 12 4.8Z"/>
                 </svg>
