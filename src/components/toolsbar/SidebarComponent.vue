@@ -10,7 +10,7 @@
                     </div>
                 </div>
             
-            <button @click="router.push({name : 'Myclasses'})" type="button" :class="[currentTag === 'Myclasses' ? 'bg-primary' : 'bg-white']" class="h-[24px] flex items-center gap-x-2 py-4 px-4 flex-none hover:bg-primary/80 rounded-r-[20px]">
+            <button @click="router.push({name : 'Myclasses'})" type="button" :class="[currentTag === 'Myclasses' ? 'bg-primary hover:bg-primary/80' : 'bg-white hover:bg-primary/20']" class="h-[24px] transition-colors flex items-center gap-x-2 py-4 px-4 flex-none  rounded-r-[20px]">
                 
                 <div class="h-4 w-4">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
                     </svg>
                 </div>
 
-                <span :class="[currentTag === 'Myclasses' ? 'text-white' : 'text-black']" class="text-major-sm">Myclass</span>
+                <span :class="[currentTag === 'Myclasses' ? 'text-white hover:text-black' : 'text-black']" class="text-major-sm">Myclass</span>
 
                 <div class="h-4 w-4 ml-auto">
                     <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,9 +30,9 @@
             </button>
 
             <ul :class="[currentTag === 'Myclasses' ? 'max-h-[300px] mb-2 mt-2' : 'max-h-0 mb-0 mt-0']" class="overflow-hidden transition-[max-height] duration-150 ease-in-out ml-4 space-y-2">
-                <li class="hover:bg-black/40 text-white py-2 px-2 group rounded-r-[10.68335px]">
+                <li class="transition-colors hover:bg-black/20 text-white py-2 px-2 group rounded-r-[10.68335px]">
                     <button class="flex items-center w-full">
-                        <span class="line-clamp-1 text-major-xsm font-semibold text-black/60 text-left group-hover:text-white">Learn Japanese N-5 class beginners</span>
+                        <span class="line-clamp-1  text-major-xsm font-semibold text-black/60 text-left">Learn Japanese N-5 class beginners</span>
                     </button>
 
                     <!-- <ul class="px-4 mt-2 space-y-2 max-h-0 overflow-hidden">
@@ -126,21 +126,21 @@
                     </ul> -->
                 </li>
 
-                <li class="hover:bg-black/40 text-white py-2 px-2 group rounded-r-[10.68335px]">
+                <li class="transition-colors hover:bg-black/20 text-white py-2 px-2 group rounded-r-[10.68335px]">
                     <button class="flex items-center w-full">
-                        <span class="line-clamp-1 text-major-xsm font-semibold text-black/60 text-left group-hover:text-white">Networking Fundamental and theory</span>
+                        <span class="line-clamp-1 text-major-xsm font-semibold text-black/60 text-left">Networking Fundamental and theory</span>
                     </button>
                 </li>
 
-                <li class="hover:bg-black/40 text-white py-2 px-2 group rounded-r-[10.68335px]">
+                <li class="transition-colors hover:bg-black/20 text-white py-2 px-2 group rounded-r-[10.68335px]">
                     <button class="flex items-center w-full">
-                        <span class="line-clamp-1 text-major-xsm font-semibold text-black/60 text-left group-hover:text-white">Fullstack web development</span>
+                        <span class="line-clamp-1 text-major-xsm font-semibold text-black/60 text-left">Fullstack web development</span>
                     </button>
                     
                 </li>
             </ul>
 
-            <button @click="courseTag" type="button" :class="[currentTag === 'Courses' ? 'bg-primary' : 'bg-white']" class="h-[24px] flex items-center gap-x-2 py-4 px-4 flex-none hover:bg-primary/80 rounded-r-[20px]">
+            <button @click="courseTag" type="button" :class="[currentTag === 'Courses' ? 'bg-primary hover:bg-primary/80' : 'bg-white hover:bg-primary/20']" class="h-[24px] transition-colors flex items-center gap-x-2 py-4 px-4 flex-none rounded-r-[20px]">
                 
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path :class="[currentTag === 'Courses' ? 'fill-white' : 'fill-black/40']" d="M24 2.25V15.75C24 16.9922 22.9922 18 21.75 18H19.5V8.25C19.5 6.18281 17.8172 4.5 15.75 4.5H6V2.25C6 1.00781 7.00781 0 8.25 0H21.75C22.9922 0 24 1.00781 24 2.25ZM18 8.25V21.75C18 22.9922 16.9922 24 15.75 24H2.25C1.00781 24 0 22.9922 0 21.75V8.25C0 7.00781 1.00781 6 2.25 6H15.75C16.9922 6 18 7.00781 18 8.25ZM14.8125 9.5625C14.8125 9.25313 14.5594 9 14.25 9H3.5625C3.25313 9 3 9.25313 3 9.5625V12H14.8125V9.5625Z"/>
@@ -150,7 +150,7 @@
             
             </button>
 
-            <button @click="router.push({name : 'Library'})" type="button" :class="[currentTag === 'Library' ? 'bg-primary' : 'bg-white']" class="h-[24px] flex items-center gap-x-2 py-4 px-4 flex-none hover:bg-primary/80 rounded-r-[20px]">
+            <button @click="router.push({name : 'Library'})" type="button" :class="[currentTag === 'Library' ? 'bg-primary hover:bg-primary/80' : 'bg-white hover:bg-primary/20']" class="h-[24px] transition-colors flex items-center gap-x-2 py-4 px-4 flex-none rounded-r-[20px]">
                 <svg class="w-4 h-4" :class="[currentTag === 'Library' ? 'fill-white' : 'fill-black/40']" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path :class="[currentTag === 'Library' ? 'stroke-primary' : 'stroke-white']" d="M3.81267 9.40779C3.52172 12.0683 3.34836 14.7453 3.2933 17.4277C6.33846 18.9472 9.25413 20.8132 12 23C14.7462 20.8131 17.6622 18.9471 20.7078 17.4277C20.6527 14.7453 20.4793 12.0683 20.1884 9.40779M20.1884 9.40779C21.114 9.0363 22.0522 8.69261 23 8.37924C19.548 5.48851 15.863 3.01651 12 1C8.13693 3.01693 4.452 5.48935 1 8.38051C1.94491 8.6921 2.88247 9.03465 3.81162 9.40779C6.6345 10.5414 9.37343 11.9539 12 13.6306C14.6262 11.954 17.3659 10.5415 20.1884 9.40779ZM6.44658 15.5399C6.65699 15.5399 6.85878 15.44 7.00756 15.2623C7.15634 15.0846 7.23993 14.8436 7.23993 14.5922C7.23993 14.3409 7.15634 14.0998 7.00756 13.9221C6.85878 13.7444 6.65699 13.6445 6.44658 13.6445C6.23617 13.6445 6.03438 13.7444 5.8856 13.9221C5.73682 14.0998 5.65324 14.3409 5.65324 14.5922C5.65324 14.8436 5.73682 15.0846 5.8856 15.2623C6.03438 15.44 6.23617 15.5399 6.44658 15.5399ZM6.44658 15.5399V10.8963C8.24138 9.56363 10.0952 8.34799 12 7.25467M4.58804 21.8489C5.17826 21.1456 5.64629 20.3099 5.96525 19.3898C6.2842 18.4697 6.44778 17.4834 6.44658 16.4876V14.5922" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -158,7 +158,7 @@
                 <span :class="[currentTag === 'Library' ? 'text-white' : 'text-black']" class="text-major-sm">Library</span>
             </button>
 
-            <button @click="router.push({name : 'Progress'})" type="button" :class="[currentTag === 'Progress' ? 'bg-primary' : 'bg-white']" class="h-[24px] flex items-center gap-x-2 py-4 px-4 hover:bg-primary/80 rounded-r-[20px]">
+            <button @click="router.push({name : 'Progress'})" type="button" :class="[currentTag === 'Progress' ? 'bg-primary hover:bg-primary/80' : 'bg-white hover:bg-primary/20']" class="h-[24px] transition-colors flex items-center gap-x-2 py-4 px-4 rounded-r-[20px]">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path :class="[currentTag === 'Progress' ? 'fill-white' : 'fill-black/40']" fill-rule="evenodd" clip-rule="evenodd" d="M7.50195 6H14.63C15.5242 6.00132 16.3814 6.35749 17.0132 6.99028C17.6451 7.62307 18 8.48076 18 9.375V18.75C18.7956 18.75 19.5587 18.4339 20.1213 17.8713C20.6839 17.3087 21 16.5456 21 15.75V6.108C21 4.603 19.875 3.297 18.336 3.168C18.1117 3.14979 17.8874 3.13312 17.663 3.118C17.4098 2.63029 17.0276 2.22147 16.558 1.93614C16.0884 1.65082 15.5494 1.49995 15 1.5H13.5C12.9505 1.49995 12.4115 1.65082 11.9419 1.93614C11.4723 2.22147 11.0901 2.63029 10.837 3.118C10.612 3.133 10.387 3.15 10.164 3.168C8.66195 3.295 7.55395 4.542 7.50195 6ZM13.5 3C13.1021 3 12.7206 3.15804 12.4393 3.43934C12.158 3.72064 12 4.10218 12 4.5H16.5C16.5 4.10218 16.3419 3.72064 16.0606 3.43934C15.7793 3.15804 15.3978 3 15 3H13.5Z"/>
                     <path :class="[currentTag === 'Progress' ? 'fill-white' : 'fill-black/40']" fill-rule="evenodd" clip-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5H14.625C15.661 7.5 16.5 8.34 16.5 9.375V20.625C16.5 21.66 15.66 22.5 14.625 22.5H4.875C4.37772 22.5 3.90081 22.3025 3.54917 21.9508C3.19754 21.5992 3 21.1223 3 20.625V9.375ZM6 12C6 11.8011 6.07902 11.6103 6.21967 11.4697C6.36032 11.329 6.55109 11.25 6.75 11.25H6.758C6.95691 11.25 7.14768 11.329 7.28833 11.4697C7.42898 11.6103 7.508 11.8011 7.508 12V12.008C7.508 12.2069 7.42898 12.3977 7.28833 12.5383C7.14768 12.679 6.95691 12.758 6.758 12.758H6.75C6.55109 12.758 6.36032 12.679 6.21967 12.5383C6.07902 12.3977 6 12.2069 6 12.008V12ZM8.25 12C8.25 11.8011 8.32902 11.6103 8.46967 11.4697C8.61032 11.329 8.80109 11.25 9 11.25H12.75C12.9489 11.25 13.1397 11.329 13.2803 11.4697C13.421 11.6103 13.5 11.8011 13.5 12C13.5 12.1989 13.421 12.3897 13.2803 12.5303C13.1397 12.671 12.9489 12.75 12.75 12.75H9C8.80109 12.75 8.61032 12.671 8.46967 12.5303C8.32902 12.3897 8.25 12.1989 8.25 12ZM6 15C6 14.8011 6.07902 14.6103 6.21967 14.4697C6.36032 14.329 6.55109 14.25 6.75 14.25H6.758C6.95691 14.25 7.14768 14.329 7.28833 14.4697C7.42898 14.6103 7.508 14.8011 7.508 15V15.008C7.508 15.2069 7.42898 15.3977 7.28833 15.5383C7.14768 15.679 6.95691 15.758 6.758 15.758H6.75C6.55109 15.758 6.36032 15.679 6.21967 15.5383C6.07902 15.3977 6 15.2069 6 15.008V15ZM8.25 15C8.25 14.8011 8.32902 14.6103 8.46967 14.4697C8.61032 14.329 8.80109 14.25 9 14.25H12.75C12.9489 14.25 13.1397 14.329 13.2803 14.4697C13.421 14.6103 13.5 14.8011 13.5 15C13.5 15.1989 13.421 15.3897 13.2803 15.5303C13.1397 15.671 12.9489 15.75 12.75 15.75H9C8.80109 15.75 8.61032 15.671 8.46967 15.5303C8.32902 15.3897 8.25 15.1989 8.25 15ZM6 18C6 17.8011 6.07902 17.6103 6.21967 17.4697C6.36032 17.329 6.55109 17.25 6.75 17.25H6.758C6.95691 17.25 7.14768 17.329 7.28833 17.4697C7.42898 17.6103 7.508 17.8011 7.508 18V18.008C7.508 18.2069 7.42898 18.3977 7.28833 18.5383C7.14768 18.679 6.95691 18.758 6.758 18.758H6.75C6.55109 18.758 6.36032 18.679 6.21967 18.5383C6.07902 18.3977 6 18.2069 6 18.008V18ZM8.25 18C8.25 17.8011 8.32902 17.6103 8.46967 17.4697C8.61032 17.329 8.80109 17.25 9 17.25H12.75C12.9489 17.25 13.1397 17.329 13.2803 17.4697C13.421 17.6103 13.5 17.8011 13.5 18C13.5 18.1989 13.421 18.3897 13.2803 18.5303C13.1397 18.671 12.9489 18.75 12.75 18.75H9C8.80109 18.75 8.61032 18.671 8.46967 18.5303C8.32902 18.3897 8.25 18.1989 8.25 18Z"/>
@@ -167,12 +167,12 @@
                 <span :class="[currentTag === 'Progress' ? 'text-white' : 'text-black']" class="text-major-sm">Progress</span>
             </button>   
 
-            <button @click="router.push({name : 'Profile'})" type="button" class="mt-auto flex items-center gap-x-2 py-4 px-4 bg-black hover:bg-[#999797] active:bg-[#666565] group">
+            <button @click="router.push({name : 'Profile'})" type="button" class="mt-auto transition-colors flex items-center gap-x-2 py-4 px-4 bg-black hover:bg-black/90 active:bg-[#666565] group">
                 <svg  class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="fill-white group-hover:fill-black" fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4C10.3209 2.39969 8.67111 2.83978 7.21526 3.67635C5.75942 4.51292 4.54845 5.7167 3.70323 7.16754C2.85801 8.61838 2.4081 10.2655 2.39841 11.9446C2.38872 13.6237 2.81959 15.2759 3.64801 16.7364C4.20794 16.0087 4.92772 15.4195 5.75171 15.0144C6.5757 14.6092 7.48181 14.399 8.4 14.4H15.6C16.5182 14.399 17.4243 14.6092 18.2483 15.0144C19.0723 15.4195 19.7921 16.0087 20.352 16.7364C21.1804 15.2759 21.6113 13.6237 21.6016 11.9446C21.5919 10.2655 21.142 8.61838 20.2968 7.16754C19.4516 5.7167 18.2406 4.51292 16.7847 3.67635C15.3289 2.83978 13.6791 2.39969 12 2.4ZM21.5316 19.2912C23.136 17.1995 24.0039 14.6361 24 12C24 5.3724 18.6276 0 12 0C5.37241 0 1.35039e-05 5.3724 1.35039e-05 12C-0.00394822 14.6361 0.863899 17.1996 2.46841 19.2912L2.46241 19.3128L2.88841 19.8084C4.01387 21.1242 5.41127 22.1803 6.98428 22.9039C8.5573 23.6276 10.2685 24.0015 12 24C14.4328 24.0045 16.8089 23.2655 18.81 21.882C19.6631 21.2926 20.4367 20.5956 21.1116 19.8084L21.5376 19.3128L21.5316 19.2912ZM12 4.8C11.0452 4.8 10.1295 5.17928 9.45442 5.85441C8.77929 6.52954 8.4 7.44521 8.4 8.39999C8.4 9.35477 8.77929 10.2704 9.45442 10.9456C10.1295 11.6207 11.0452 12 12 12C12.9548 12 13.8705 11.6207 14.5456 10.9456C15.2207 10.2704 15.6 9.35477 15.6 8.39999C15.6 7.44521 15.2207 6.52954 14.5456 5.85441C13.8705 5.17928 12.9548 4.8 12 4.8Z"/>
+                    <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4C10.3209 2.39969 8.67111 2.83978 7.21526 3.67635C5.75942 4.51292 4.54845 5.7167 3.70323 7.16754C2.85801 8.61838 2.4081 10.2655 2.39841 11.9446C2.38872 13.6237 2.81959 15.2759 3.64801 16.7364C4.20794 16.0087 4.92772 15.4195 5.75171 15.0144C6.5757 14.6092 7.48181 14.399 8.4 14.4H15.6C16.5182 14.399 17.4243 14.6092 18.2483 15.0144C19.0723 15.4195 19.7921 16.0087 20.352 16.7364C21.1804 15.2759 21.6113 13.6237 21.6016 11.9446C21.5919 10.2655 21.142 8.61838 20.2968 7.16754C19.4516 5.7167 18.2406 4.51292 16.7847 3.67635C15.3289 2.83978 13.6791 2.39969 12 2.4ZM21.5316 19.2912C23.136 17.1995 24.0039 14.6361 24 12C24 5.3724 18.6276 0 12 0C5.37241 0 1.35039e-05 5.3724 1.35039e-05 12C-0.00394822 14.6361 0.863899 17.1996 2.46841 19.2912L2.46241 19.3128L2.88841 19.8084C4.01387 21.1242 5.41127 22.1803 6.98428 22.9039C8.5573 23.6276 10.2685 24.0015 12 24C14.4328 24.0045 16.8089 23.2655 18.81 21.882C19.6631 21.2926 20.4367 20.5956 21.1116 19.8084L21.5376 19.3128L21.5316 19.2912ZM12 4.8C11.0452 4.8 10.1295 5.17928 9.45442 5.85441C8.77929 6.52954 8.4 7.44521 8.4 8.39999C8.4 9.35477 8.77929 10.2704 9.45442 10.9456C10.1295 11.6207 11.0452 12 12 12C12.9548 12 13.8705 11.6207 14.5456 10.9456C15.2207 10.2704 15.6 9.35477 15.6 8.39999C15.6 7.44521 15.2207 6.52954 14.5456 5.85441C13.8705 5.17928 12.9548 4.8 12 4.8Z"/>
                 </svg>
 
-                <span :class="[currentTag === 'Profile' ? 'text-primary' : 'text-black']" class="text-major-sm font-medium group-hover:text-black text-white">Mg Thaung</span>
+                <span :class="[currentTag === 'Profile' ? 'text-primary' : 'text-black']" class="text-major-sm font-medium text-white">Mg Thaung</span>
             </button>   
         </div>
         <div :class="[slide ? 'w-[248px]' : 'w-0']" class="h-full overflow-x-hidden bg-[#FAFAFA] transition-[width]">

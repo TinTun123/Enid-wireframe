@@ -1,12 +1,13 @@
 <template>
-    <div>
+    <div class="overflow-y-visible">
         
         <div ref="inner" 
         class="flex 
         flex-none 
         items-center 
-        pl-4 
-        overflow-x-hidden 
+        pl-4
+        overflow-x-hidden
+        pb-4
         gap-x-4 
         scroll-container
         tablet:pl-8
