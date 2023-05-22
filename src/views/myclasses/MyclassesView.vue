@@ -53,7 +53,7 @@
 
             <div class="mt-7 grid grid-rows-4 grid-cols-2 gap-4 mx-2 ">
 
-                <div v-ripple="'rgba(0, 0, 0, 0.12)'" class="bg-white transition-shadow active:drop-shadow-none  overflow-hidden rounded-[10px] relative col-span-1 py-2 flex items-center drop-shadow-drop-sha">
+                <div class="bg-white transition-shadow active:drop-shadow-none  overflow-hidden rounded-[10px] relative col-span-1 py-2 flex items-center drop-shadow-drop-sha">
 
                     <div class="flex items-center px-2 py-3 gap-x-1">
                         <div class="w-8 h-8 relative text-center">
@@ -63,10 +63,10 @@
                             <span class="text-minor-xxxsm text-black/70 font-semibold absolute top-[50%] -translate-x-[50%] -translate-y-[50%]">10%</span>
                         </div>
                         <div class="flex-col flex">
-                            <span class="text-minor-xsm text-black/70 font-medium">
+                            <span class="text-minor-xsm text-black/80 font-medium">
                                 ASSGNIMENTS
                             </span>
-                            <span class="text-minor-xxsm text-black/80 font-semibold">
+                            <span class="text-minor-xxsm text-black/70 font-semibold">
                                 3/4
                             </span>
                         </div>
@@ -86,7 +86,7 @@
 
                 </div>
 
-                <div v-ripple="'rgba(0, 0, 0, 0.12)'" class="bg-white transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden rounded-[10px] col-span-1 relative flex items-center">
+                <div class="bg-white transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden rounded-[10px] col-span-1 relative flex items-center">
                     <div class="flex items-center px-2 py-3 gap-x-2">
                         <div class="w-8 h-8 relative text-center">
                             <svg class="w-full h-full" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,10 +95,10 @@
                             <span class="text-minor-xxxsm text-black/70 font-semibold absolute top-[50%] -translate-x-[50%] -translate-y-[50%]">10%</span>
                         </div>
                         <div class="flex-col flex">
-                            <span class="text-minor-xsm text-black/70 font-medium">
+                            <span class="text-minor-xsm text-black/80 font-medium">
                                 EXERCISES
                             </span>
-                            <span class="text-minor-xxsm text-black/80 font-semibold">
+                            <span class="text-minor-xxsm text-black/70 font-semibold">
                                 4/8
                             </span>
                         </div>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 
-                <div v-ripple="'rgba(0, 0, 0, 0.12)'" class="bg-white transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden rounded-[10px] h-[210px] col-span-1 row-span-3 relative">
+                <div class="bg-white transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden rounded-[10px] h-[210px] col-span-1 row-span-3 relative">
 
                     <div class="w-3 h-3 absolute top-2 right-2">
                         <svg class="w-full h-full" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +214,7 @@
                     </div>
                 </div>
 
-                <div v-ripple="'rgba(0, 0, 0, 0.12)'" class="transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden bg-white rounded-[10px] row-span-2 col-span-1">
+                <div class="transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden bg-white rounded-[10px] row-span-2 col-span-1">
                     <div class="flex items-center ml-2 mt-2 mb-3">
                         <span class="text-minor-xxsm font-medium text-black/70">LECTURE</span>
 
@@ -250,7 +250,7 @@
 
                 </div>
 
-                <div v-ripple="'rgba(0, 0, 0, 0.12)'" class="transition-shadow drop-shadow-none overflow-hidden bg-white rounded-[10px] relative col-span-1 row-span-1 flex items-center">
+                <div class="transition-shadow active:drop-shadow-none drop-shadow-drop-sha overflow-hidden bg-white rounded-[10px] relative col-span-1 row-span-1 flex items-center">
                     <div class="flex items-center px-2 gap-x-1 my-auto">
                         <div class="w-8 h-8 relative text-center">
                             <svg class="w-full h-full" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,19 +260,19 @@
                         </div>
                         <div class="flex-col">
                             <div class="flex items-center gap-x-1">
-                                <span class="text-minor-xxsm font-semibold text-black/80">
+                                <span class="text-minor-xxsm font-semibold text-black/70">
                                     2/4
                                 </span>
-                                <span class="text-minor-xsm fonr-medium text-black/70">
+                                <span class="text-minor-xsm fonr-medium text-black/80">
                                     READING
                                 </span>
                             </div>
 
                             <div class="flex items-center gap-x-1">
-                                <span class="text-minor-xxsm font-semibold text-black/80">
+                                <span class="text-minor-xxsm font-semibold text-black/70">
                                     2/6
                                 </span>
-                                <span class="text-minor-xsm fonr-medium text-black/70">
+                                <span class="text-minor-xsm fonr-medium text-black/80">
                                     VIDEOS
                                 </span>
                             </div>
