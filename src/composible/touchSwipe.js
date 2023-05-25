@@ -33,6 +33,7 @@ export const useTouchSwipe = (target, total, Ids, page) => {
         if(isswipe.value) {
             getXY(e);
             let diffX = mouseX.value - initialX.value;
+            
             if(diffX > 0) {
                 direction.value = 'left'
                
@@ -46,9 +47,9 @@ export const useTouchSwipe = (target, total, Ids, page) => {
     // eslint-disable-next-line no-unused-vars
     const handleTouchEnd = (e) => {
         if(direction.value === 'right') {
-            
             if(currentCourse.value < Ids.length - 1) {
                 currentCourse.value += 1;
+                
                 next();
                 currentCorID.value = Ids[currentCourse.value];
                 // console.log('currentCourse:', currentCourse.value);
@@ -79,6 +80,7 @@ export const useTouchSwipe = (target, total, Ids, page) => {
         } else if (page === 'classes') {
             marginArr = [0, 0];
         }
+
         rectLeft = inner.value.getBoundingClientRect().left;
         rectTop = inner.value.getBoundingClientRect().top;
         counter.value = 0;
@@ -108,12 +110,14 @@ export const useTouchSwipe = (target, total, Ids, page) => {
 
 
     const next = () => {
-
         if(type.value === 'phone') {
             if (counter.value === 0) {
+                inner.value.scrollLeft += 100;
                 inner.value.scrollLeft += childWidth.value + marginArr[0];
                 counter.value += 1;
             } else {
+                inner.value.scrollLeft += 100;
+                console.log(inner.value.scrollLeft);
                 inner.value.scrollLeft += childWidth.value + marginArr[0] + (page === 'classes' ? 16 : 0);
                 counter.value += 1;
             }

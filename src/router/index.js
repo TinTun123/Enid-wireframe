@@ -7,7 +7,7 @@ import ProgressView from '../views/progress/ProgressView.vue'
 import MyClassView from '../views/myclasses/MyclassesView.vue'
 import HomeView from '../views/home/HomeView.vue'
 import MenuView from '../views/courses/MenuView.vue'
-
+import TestView from '../views/progress/TestView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -51,12 +51,21 @@ const router = createRouter({
           path : 'class/:id',
           name : 'Menu',
           component : MenuView
+        },
+        {
+          path : 'test',
+          name : 'Test',
+          component : TestView
         }
-      ]
+      ],
+
+
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
     },
+
+
 
   ]
 })
