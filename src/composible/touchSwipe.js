@@ -45,8 +45,8 @@ export const useTouchSwipe = (target, total, Ids, page) => {
 
     // eslint-disable-next-line no-unused-vars
     const handleTouchEnd = (e) => {
-        if(direction.value === 'right') {
-
+        if(direction.value === 'right' && (mouseX.value - initialX.value) < -40) {
+            
             if(currentCourse.value < Ids.length - 1) {
                 currentCourse.value += 1;
                 next();
@@ -56,7 +56,7 @@ export const useTouchSwipe = (target, total, Ids, page) => {
             }
 
             // console.log(currentCourse.value);;
-        } else if (direction.value === 'left') {
+        } else if (direction.value === 'left' && mouseX.value - initialX.value > 40) {
 
             if(currentCourse.value > 0) {
                 currentCourse.value -= 1;

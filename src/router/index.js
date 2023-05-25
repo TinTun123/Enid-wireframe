@@ -6,6 +6,8 @@ import ProfileView from '../views/profile/ProfileView.vue'
 import ProgressView from '../views/progress/ProgressView.vue'
 import MyClassView from '../views/myclasses/MyclassesView.vue'
 import HomeView from '../views/home/HomeView.vue'
+import MenuView from '../views/courses/MenuView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -44,6 +46,11 @@ const router = createRouter({
           path : 'profile',
           name : 'Profile',
           component : ProfileView
+        },
+        {
+          path : 'class/:id',
+          name : 'Menu',
+          component : MenuView
         }
       ]
       // route level code-splitting

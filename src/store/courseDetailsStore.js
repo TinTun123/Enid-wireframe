@@ -230,7 +230,7 @@ export const useCourseDetailsStore = defineStore('CourseDetails', () => {
             ]
         },
     ]);
-
+    const myClass = ref(course.value[0].title);
     const currentCourseID = ref('0001');
     const totalcourse = computed(() => {
         return course.value.length;
@@ -261,5 +261,33 @@ export const useCourseDetailsStore = defineStore('CourseDetails', () => {
         });
     })
 
-    return {course, currentCourseID, totalcourse, currentSyllabus, currentCourse, courseTitles, courseIds};
+    // const getTitle = computed((id) => {
+    //     console.log(id);
+    //     const title = course.value.filter((c) => {
+    //         return c.id === id;
+    //     });
+    //     return "test";
+    // })
+
+    const getTitle = (id) => {
+        return computed(() => {
+            const selectedCourse = course.value.filter((c) => {
+                
+                return c.id === id;
+            });
+            return selectedCourse[0];
+        });
+    }
+
+    return {
+        course, 
+        currentCourseID, 
+        totalcourse, 
+        currentSyllabus, 
+        currentCourse, 
+        courseTitles, 
+        courseIds, 
+        myClass,
+        getTitle
+    };
 })

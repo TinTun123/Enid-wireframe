@@ -32,7 +32,7 @@
             transition-all 
             duration-200 
             ease-linear
-            bg-black/70
+            bg-black/50
             text-white
             focus:placeholder:opacity-100 
             peer-focus:text-primary 
@@ -42,7 +42,7 @@
             w-full
             h-full
             border-white
-            text-base 
+            text-minor-sm 
             "
             v-model="name">
   
@@ -56,6 +56,7 @@
               origin-[0_0] 
               truncate
               leading-8
+              text-minor-sm
               lg-tablet:leading-[3rem]
               desktop:leading-8
               transition-all 
@@ -76,13 +77,13 @@
             </label>
           </div>
   
-          <div class="password relative mt-8 tablet:mt-16 h-8 lg-tablet:h-12 desktop:h-8 desktop:mt-8">
+          <div class="password relative mt-8 tablet:mt-12 h-8 lg-tablet:h-12 desktop:h-8 desktop:mt-8">
             <input type="password" name="password" id="password"
             class="
             peer
             block
             border-0
-            bg-black/70
+            bg-black/50
             text-white
             leading-[1.6]
             outline-none 
@@ -97,7 +98,7 @@
             w-full
             h-full
             border-white
-            text-base 
+            text-minor-sm 
             "
             v-model="pwd">
   
@@ -106,12 +107,12 @@
               class="
               pointer-events-none 
               absolute 
-              
               h-full
               top-0 
               origin-[0_0] 
               truncate
               leading-8
+              text-minor-sm
               lg-tablet:leading-[3rem]
               desktop:leading-8 
               transition-all 
@@ -132,18 +133,19 @@
             </label>
           </div>
   
-          <div class="campus relative tablet:mt-16 h-8 mt-8 lg-tablet:h-12 desktop:h-8 desktop:mt-8">
+          <div class="campus relative tablet:mt-12 h-8 mt-8 lg-tablet:h-12 desktop:h-8 desktop:mt-8">
             <input type="text" name="campus" id="campus"
             class="
             peer
             block
             border-0
             leading-[1.6]
-            outline-none 
+            outline-none
+             
             transition-all 
             duration-200 
             ease-linear
-            bg-black/70 
+            bg-black/50 
             focus:placeholder:opacity-100 
             peer-focus:text-primary 
             data-[te-input-state-active]:placeholder:opacity-100 
@@ -152,7 +154,7 @@
             w-full
             h-full
             border-white
-            text-base
+            text-minor-sm
             text-white
             "
             v-model="campus">
@@ -167,11 +169,11 @@
               origin-[0_0] 
               truncate
               leading-8
+              text-minor-sm
               lg-tablet:leading-[3rem]
               desktop:leading-8
               transition-all
               duration-200
-              
               ease-out 
               peer-focus:-translate-y-[1.5rem]
               peer-focus:scale-[0.7] 
@@ -206,6 +208,7 @@
       gap-4
       tablet:gap-6
       overflow-x-scroll
+      overflow-y-visible
       scrolling-touch
       pt-[1.25rem]
       tablet:pt-[1.875rem]
@@ -222,7 +225,7 @@
   
       <div class="
       absolute
-      bottom-0
+      
       login-btn
       left-0
       right-0

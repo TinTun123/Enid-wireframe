@@ -5,8 +5,11 @@
 @layer base {
     html, body {
         font-family: Roboto, Proxima Nova, system-ui, sans-serif;    
-        font-weight: 100%;
         
+    }
+
+    body {
+      height: 100vh;
     }
 }
 /* .bg-grad {
@@ -25,4 +28,7 @@
     scroll-behavior: smooth;
   }
 
+  .background-grad {
+    background: linear-gradient(204.75deg, rgba(204, 217, 240, 0.2) 75%, rgba(23, 98, 229, 0.3) 100%);
+}
 

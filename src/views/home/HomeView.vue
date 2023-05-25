@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="">
         <HeaderComponent v-if="type !== 'desktop'" class="fixed top-0 z-50 w-full"/>
-        <div class="desktop:flex desktop:max-h-screen">
+        <div class="desktop:flex desktop:max-h-screen lg-tablet:h-full">
                 <SidebarComponent v-if="type === 'desktop'" class="flex"/>
             <div class="desktop:flex-1 desktop:overflow-y-scroll">
-                <div class="desktop:w-[840px] desktop:mx-auto">
-                    <router-view class="mb-20 mt-12 tablet:mt-16"></router-view>
+                <div class="desktop:mx-[200px]">
+                    <router-view class="mb-20 mt-12 tablet:mt-16 desktop:mt-0"></router-view>
                 </div>
             </div>
         </div>

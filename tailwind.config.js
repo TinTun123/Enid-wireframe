@@ -51,7 +51,8 @@ module.exports = {
     // eslint-disable-next-line no-undef
     require('@tailwindcss/forms'),
     // eslint-disable-next-line no-undef
-    require('tw-elements/dist/plugin.cjs')
+    require('tw-elements/dist/plugin.cjs'),
+
   ],
 }
 

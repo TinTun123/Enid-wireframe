@@ -3,7 +3,8 @@
     <div
     @click="picked_school"
       class="
-      min-h-[11rem]
+      h-auto
+      pb-12
       tablet:min-h-[13rem]
       lg-tablet:min-h-[14rem]
       desktop:min-h-[12rem]
@@ -51,18 +52,19 @@
           <div class="text-block">
               <h1 class="text-minor-sm 
               line-clamp-1 
-              text-black/70
+              text-black/60
               font-semibold 
               tablet:text-base 
               tablet:font-medium">
               {{ school.title }}
               </h1>
               <p class="
-              text-minor-xxsm 
-              line-clamp-6
+              indent-5
+              text-minor-xsm 
+              line-clamp-4
               tablet:line-clamp-5
-              leading-[0.86875rem]
-              text-black/60 
+              leading-[16.665px]
+              text-black/80 
               font-[0.6] 
               mr-[0.5rem] 
               mt-[0.51875rem]
@@ -78,7 +80,12 @@
             </p>
           </div>
 
-          <a href="#" 
+
+          <!-- fill="#5D5D72" school-color -->
+
+        </div>
+
+        <a href="#" 
           class="
           absolute 
           bottom-[0.625rem] 
@@ -91,7 +98,6 @@
           rounded-[16px]
           w-auto
           h-4
-          
           tablet:h-6
           desktop:h-4">  
             <svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,18 +111,8 @@
             </clipPath>
             </defs>
           </svg>
-            <!-- <span class="text-minor-xxsm 
-            text-white
-            h-full 
-            leading-4
-            tablet:h-full 
-            tablet:leading-6
-            desktop:leading-4 
-            font-semibold">
-              More
-            </span> -->
           </a>
-          <!-- fill="#5D5D72" school-color -->
+
           <span class="absolute bottom-[0.125rem] flex items-center right-[0.1975rem] w-4 h-4 tablet:w-6 tablet:h-6 desktop:w-4 desktop:h-4">
             <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_120_7)">
@@ -130,7 +126,6 @@
             </svg>
 
           </span>
-        </div>
       </div>
 </template>
 
@@ -147,7 +142,7 @@ const props = defineProps({
 
 const store = useLoginStore();
 
-const addborder = ref('1px solid #6094E8');
+const addborder = ref('1px solid #6094e871');
 
 
 
@@ -191,7 +186,7 @@ const addborder = ref('1px solid #6094E8');
 }
 
 .addborder {
-  border: 1px solid #6094E8;
+  border: 1px solid #6094e871;
 }
 
 

@@ -1,12 +1,13 @@
 <template>
     <transition>
         <div :key="courseStore.currentCourseID">
-            <div v-if="type === 'desktop'" class="w-full h-[335px] bg-neutral-400 ml-4 rounded-[10px] desktop:w-[611px] desktop:mx-auto">
+            <div v-if="type === 'desktop'" class="w-full h-[335px] bg-neutral-400 ml-4 rounded-[10px] desktop:ml-0 z-[100] relative desktop:w-[611px]">
 
             </div>
             <h3 
             class="text-base 
             font-medium
+            text-black/80
             border-l-4 
             border-primary 
             pl-2 
@@ -14,7 +15,7 @@
             mb-4 
             ml-4
             tablet:text-minor-l
-            tablet:text-black/90
+            tablet:text-black/80
             tablet:mx-8
             lg-tablet:ml-24
             lg-tablet:text-major-lg
@@ -23,20 +24,22 @@
             desktop:font-medium
             desktop:mt-12
             desktop:pl-4
-            desktop:w-[611px]
             desktop:mx-auto
             
             "> {{ courseStore.currentSyllabus[0].title }}</h3>
             
             <p 
-            class="text-minor-sm 
-            text-black/70 
+            class="relative
+            z-100
+            font-medium
+            text-minor-sm  
+            text-black/60 
             leading-[19.2px] 
             mb-7 
             indent-7 
             mx-4
             tablet:text-minor-sm
-            tablet:w-3/5
+            tablet:w-4/5
             tablet:leading-[19.995px]
             tablet:mx-8
             lg-tablet:ml-24
@@ -46,14 +49,13 @@
             lg-tablet:w-4/5
             desktop:text-base
             desktop:leading-[24px]
-            desktop:w-[611px]
-            desktop:mx-auto
+            desktop:mx-0
             desktop:mb-8">
                 {{ courseStore.currentSyllabus[0].descri }}
             </p>
 
             <h4 
-            class="text-sm 
+            class="text-minor-sm 
             text-black/80 
             font-medium 
             mb-2 
@@ -64,7 +66,6 @@
             lg-tablet:text-major-l
             lg-tablet:ml-24
             lg-tablet:mb-8
-            desktop:w-[611px]
             desktop:mx-auto">Course Syllabus</h4>
 
             <div class="flex 
@@ -74,13 +75,13 @@
             pl-4 
             pr-4 
             pt-4 
-            overflow-x-scroll 
+            pb-4
+            overflow-x-scroll
             scroll-container 
             tablet:pl-8
             lg-tablet:block
             lg-tablet:ml-24
             lg-tablet:p-0
-            desktop:w-[611px]
             desktop:mx-auto
             desktop:block">
 
@@ -128,20 +129,20 @@
                                     class="text-minor-xsm 
                                     text-black/80
                                     tablet:text-minor-xsm 
-                                    lg-tablet:text-major-sm
+                                    lg-tablet:text-base
                                     lg-tablet:border-l-2
                                     lg-tablet:border-primary
                                     lg-tablet:pl-2
                                     ">LECTURE</h4>
                                 </div>
 
-                                <ol class="list-decimal ml-4 mb-3">
+                                <ol class="list-decimal ml-4 mb-3 lg-tablet:mt-2 tablet:space-y-1">
                                     <li v-for="(lecture, i) in weeks.lectures" :key="i" 
                                     class="text-minor-xsm 
-                                    font-medium 
-                                    text-black/90 
-                                    tablet:text-minor-xsm 
-                                    tablet:font-medium 
+                                    font-semibold
+                                    space-y-1 
+                                    text-black/60 
+                                    tablet:text-minor-xsm  
                                     lg-tablet:text-major-sm">{{lecture}}</li>
                                 </ol>
                             </div>
@@ -176,14 +177,14 @@
                                     class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
-                                    lg-tablet:text-major-sm
+                                    lg-tablet:text-base
                                     lg-tablet:border-l-2
                                     lg-tablet:border-primary
                                     lg-tablet:pl-2">EXERCISES</h4>
                                 </div>
 
-                                <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(exercise, i) in weeks.exercise" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{exercise}}</li>
+                                <ol class="list-decimal lg-tablet:mt-2 tablet:space-y-1 ml-4 mb-3">
+                                    <li v-for="(exercise, i) in weeks.exercise" :key="i" class="text-minor-xsm text-black/60 space-y-1 font-semibold tablet:text-minor-xsm lg-tablet:text-major-sm">{{exercise}}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -212,8 +213,8 @@
                                         <ellipse cx="25.5" cy="26" rx="25.5" ry="26" fill="#307CF2"/>
                                     </svg>
 
-                                    <div class="flex-col text-center justify-center absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-                                        <span class="lg-tablet:text-white lg-tablet:text-major-sm desktop:text-major-xsm lg-tablet:font-medium">Week</span><br>
+                                    <div class="flex flex-col text-center justify-center absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                        <span class="lg-tablet:text-white lg-tablet:text-major-sm desktop:text-major-xsm lg-tablet:font-medium">Week</span>
                                         <span class="lg-tablet:text-white lg-tablet:text-major-sm desktop:text-major-xsm lg-tablet:font-semibold">{{ weeks.week }}</span>
                                     </div>
                                 </div>
@@ -251,16 +252,17 @@
 
                                     <h4 
                                     class="text-minor-xsm 
-                                    text-black/80 
+                                    text-black/80
+                                    
                                     tablet:text-minor-xsm 
-                                    lg-tablet:text-major-sm
+                                    lg-tablet:text-base
                                     lg-tablet:border-l-2
                                     lg-tablet:border-primary
                                     lg-tablet:pl-2">ASSIGNMENTS</h4>
                                 </div>
 
-                                <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(assign, i) in weeks.assginments" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ assign }}</li>
+                                <ol class="list-decimal ml-4 lg-tablet:mt-2 tablet:space-y-1 mb-3">
+                                    <li v-for="(assign, i) in weeks.assginments" :key="i" class="text-minor-xsm space-y-1 font-semibold text-black/60 tablet:text-minor-xsm lg-tablet:text-major-sm">{{ assign }}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -286,14 +288,14 @@
                                     class="text-minor-xsm 
                                     text-black/80 
                                     tablet:text-minor-xsm 
-                                    lg-tablet:text-major-sm
+                                    lg-tablet:text-base
                                     lg-tablet:pl-2
                                     lg-tablet:border-l-2
                                     lg-tablet:border-primary">READING</h4>
                                 </div>
 
-                                <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(reading, i) in weeks.readings" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ reading }}</li>
+                                <ol class="list-decimal lg-tablet:mt-2 tablet:space-y-1 ml-4 mb-3">
+                                    <li v-for="(reading, i) in weeks.readings" :key="i" class="text-minor-xsm space-y-1 font-semibold text-black/60 tablet:text-minor-xsm lg-tablet:text-major-sm">{{ reading }}</li>
                                 </ol>
                             </div>
                         </transition>
@@ -322,15 +324,21 @@
                                     <h4 
                                     class="text-minor-xsm 
                                     text-black/80 
-                                    tablet:text-minor-xsm 
-                                    lg-tablet:text-major-sm
+                                    lg-tablet:text-base
                                     lg-tablet:pl-2
                                     lg-tablet:border-l-2
                                     lg-tablet:border-primary">DISCUSSION</h4>
                                 </div>
 
-                                <ol class="list-decimal ml-4 mb-3">
-                                    <li v-for="(discussion, i) in weeks.discussion" :key="i" class="text-minor-xsm font-medium text-black/90 tablet:text-minor-xsm tablet:font-medium lg-tablet:text-major-sm">{{ discussion }}</li>
+                                <ol class="list-decimal ml-4 mb-3 lg-tablet:mt-2 tablet:space-y-1">
+                                    <li v-for="(discussion, i) in weeks.discussion" :key="i" 
+                                    class="text-minor-xsm 
+                                    font-semibold
+                                    space-y-1 
+                                    text-black/60 
+                                    tablet:text-minor-xsm 
+                                     
+                                    lg-tablet:text-major-sm">{{ discussion }}</li>
                                 </ol>
                             </div>
                         </transition>
