@@ -241,7 +241,6 @@ export const useCourseDetailsStore = defineStore('CourseDetails', () => {
             
             return c.id === currentCourseID.value;
         });
-        console.log('compute update');
         return currentCou;
     })
 

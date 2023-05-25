@@ -391,7 +391,6 @@ const prevWeek = () => {
 
 watch(courseStore.currentCourse, () => {
     currentWeek.value = 0;
-    console.log('Course ID changed');
 })
 
 </script>
