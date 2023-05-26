@@ -112,21 +112,28 @@ export const useTouchSwipe = (target, total, Ids, page) => {
     const next = () => {
         if(type.value === 'phone') {
             if (counter.value === 0) {
-                inner.value.scrollLeft += 100;
+
+                // inner.value.scrollLeft = inner.value.scrollLeft + 100;
                 inner.value.scrollLeft += childWidth.value + marginArr[0];
+                
                 counter.value += 1;
+
             } else {
-                inner.value.scrollLeft += 100;
-                console.log(inner.value.scrollLeft);
-                inner.value.scrollLeft += childWidth.value + marginArr[0] + (page === 'classes' ? 16 : 0);
+
+                inner.value.scrollLeft = inner.value.scrollLeft + childWidth.value + marginArr[0] + (page === 'classes' ? 16 : 0);
+                
                 counter.value += 1;
+            
             }
         } else if (type.value === 'tablet') {
             if (counter.value === 0) {
+
                 console.log('tablet');
                 inner.value.scrollLeft += childWidth.value + marginArr[1];
                 counter.value += 1;
+            
             } else {
+
                 inner.value.scrollLeft += childWidth.value + marginArr[1] + 32;
                 counter.value += 1;
             }

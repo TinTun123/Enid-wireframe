@@ -101,6 +101,11 @@
             lg-tablet:w-[557px]
             lg-tablet:h-[418px]"></div>
         </div>
+
+        <div class="flex gap-x-4">
+            <button @click="previous" class="p-4 border border-blue-400">previous</button>
+            <button @click="next" class="p-4 border border-blue-400">next</button>
+        </div>
     </div>
 
 </template>
@@ -119,6 +124,18 @@ const {currentCorID} = useTouchSwipe(inner, courseStore.totalcourse, id_arr, 'co
 watch(currentCorID, (newval) => {
     courseStore.currentCourseID = newval;
 })
+
+const next = () => {
+
+    inner.value.scrollLeft += inner.value.children[0].clientWidth + 16;
+
+}
+
+const previous = () => {
+
+    inner.value.scrollLeft -= inner.value.children[0].clientWidth + 16;
+
+}
 
 onMounted(() => {
     
