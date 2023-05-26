@@ -26,7 +26,7 @@
             tablet:h-[331px]
             lg-tablet:w-[557px]
             lg-tablet:h-[418px]">
-                <!-- <div class="flex items-center h-4 absolute bottom-2 gap-x-1 tablet:bottom-4">
+                <div class="flex items-center h-4 absolute bottom-2 gap-x-1 tablet:bottom-4">
                     <div class="w-2 h-2 tablet:w-4 tablet:h-4">
                         <svg class="w-full h-full" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_217_372)">
@@ -44,9 +44,9 @@
                     text-black/80
                     tablet:text-minor-xsm
                     lg-tablet:text-base">{{ course.level }}</span>
-                </div> -->
+                </div>
 
-                <!-- <div class="flex items-center gap-x-2 absolute bottom-2 right-4 tablet:right-4 tablet:bottom-4">
+                <div class="flex items-center gap-x-2 absolute bottom-2 right-4 tablet:right-4 tablet:bottom-4">
                     <div class="flex items-center gap-x-1">
                         <div class="w-2 h-2 tablet:w-4 tablet:h-4">
 
@@ -68,8 +68,8 @@
                         ">
                             <span class="text-minor-xxsm text-black/80 font-medium tablet:text-minor-xsm lg-tablet:text-major-sm">{{ course.time }}</span>
                         </div>
-                    </div> -->
-                    <!-- <div class="flex justify-center items-center gap-x-1">
+                    </div>
+                    <div class="flex justify-center items-center gap-x-1">
                         <div class="h-2 w-2 tablet:w-4 tablet:h-4">
                             <svg class="w-full h-full" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_28_168)">
@@ -92,7 +92,7 @@
 
 
                     </div> 
-                </div>-->
+                </div>
             </div>
             <div class="flex-none  w-1/4 h-[128px]
             tablet:w-[441px]
